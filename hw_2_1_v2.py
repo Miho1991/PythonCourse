@@ -14,7 +14,7 @@ while True:
         elif a[i]=='-' and len(a)>1:
             minCountA +=1
             continue
-        elif a[i].isalpha() or a[i]==' ' or not a[i].isdigit():
+        elif not a[i].isdigit():
             countA += 2
     for i in range(len(b)):
         if b[i]=='.' and len(b)>1:
@@ -23,7 +23,7 @@ while True:
         elif b[i]=='-' and len(b)>1:
             minCountB +=1
             continue
-        elif b[i].isalpha() or b[i]==' ' or not b[i].isdigit():
+        elif not b[i].isdigit():
             countB += 2
     if countB > 1 or countA > 1 or minCountB > 1 or minCountA > 1 or minCountB>=len(b) or minCountA>=len(a):
         print('Формат ввода не правильный! Попробуйте снова!')
