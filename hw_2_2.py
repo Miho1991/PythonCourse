@@ -12,7 +12,7 @@ while True:
 f1 = 0
 f2 = 1
 
-for i in range (int(n)-2):
+for i in range (int(n)-1):
     fn = f1+f2
     f1 = f2
     f2 = fn
